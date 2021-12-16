@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#wrapper {
+    margin-top: 7rem;
+}
+body {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #9acd32;
+}
+#c-body {
+  background-color: #EEEEEE;
+}
+#month-name { 
+   background-color: #1ABC9C;
+   padding: 6%;
+   text-align: center;   
+   color: white;
+   animation-name: calenr;
+   animation-duration: 0.25s;
+}
+table {
+    border-collapse: collapse;
+}
+table thead {
+    animation-name: calenr;
+    animation-duration: 0.5s;
+}
+table thead tr {
+    background-color: #DDDDDD;
+}
+table thead tr th{
+    text-align: center;
+    width: 14%;
+    padding: 1%;
+}
+table tr {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+}
+
+#c-body table {
+    width: 100%;
+    text-align: center;
+    animation-name: calenl;
+   animation-duration: 0.5s;
+} 
+#c-body table tr td {
+    width: 14%;
+    padding: 1%;
+} 
+@keyframes calenl {
+    from{margin-left: -5555px;}
+    to{margin-left: 0px;}
+}
+@keyframes calenr {
+    from{margin-right: -5555px;}
+    to{margin-right: 0px;}
+}
+.weekend{
+    color: red;
+}
+.presentDay {
+   background-color: #1ABC9C;
+   padding: 0px;
+}
